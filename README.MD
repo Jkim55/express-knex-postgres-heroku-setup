@@ -55,13 +55,13 @@
 ##### Migrating & Seeding
 - `knex migrate:make table_name` to create a new migration
   * this creates a folder called 'migrations' with a new 'timestamp_table_name.js' file
-  * Each time you change the table you will need to rerun this command & change the contents of the js file
+  * each time you change the table you will need to rerun this command & change the contents of the js file
 - `knex migrate:latest` runs knex migration locally (whatever development environment is set to)
 - `knex seed:make seed_name` to create a new seed  :seedling:
   * this creates a folder called 'seeds' with a new 'timestamp_seed_name.js' file
 - `knex seed:run` to run seed the local database
 
 If deploying to heroku,
-- `knex migrate:latest --env production` runs knex migration locally against heroku database in the cloud
-- `knex seed:run --env production` runs knex locally & puts seed data in heroku database
+- `knex migrate:latest --env production` to run knex migration locally against heroku database in the cloud
+- `knex seed:run --env production` to run knex locally & puts seed data in heroku database
 - `git push heroku master` to push to heroku :tada::balloon::confetti_ball:
