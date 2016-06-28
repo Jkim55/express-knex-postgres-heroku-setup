@@ -23,7 +23,6 @@
 
 ##### Set Up Knex
 - `npm i -S pg knex` installs pg & knex, & adds both to the dependencies in package.json
-  * in 'index.js' file, add `var pg = require('pg');`
   * [pg](https://www.npmjs.com/package/pg) is a module that lets you connect to psql; must be installed on a per project basis
   * assumes you have [knex](https://www.npmjs.com/package/knex) package installed globally (`npm i knex -g`)
 - `knex init` creates 'knexfile.js' in root directory
